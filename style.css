@@ -1,137 +1,93 @@
-/*Sytle CSS*/
 body {
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  height: auto;
-  overflow-x: hidden;
+    font-family: Arial, sans-serif; /* Sets the font family for the body */
+    line-height: 1.6; /* Sets the line height for the body */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #dadada; /* Sets the background color */
+    text-align: center; /* Centers the text */
+    color: #800000; /* Sets the text color to maroon */
+    padding-bottom: 5rem; /* Adds padding to the bottom to prevent footer overlap */
 }
 
-h1,h2,h3,p,li,footer {
-  color: white;
-  text-align: center;
+header {
+    background: #800000; /* Sets the background color to maroon */
+    color: #ffd700; /* Sets the text color to gold */
+    padding: 1rem 0; /* Adds padding to the top and bottom */
+    text-align: center; /* Centers the text */
 }
 
-h1,h2,h3 {
-  text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5); 
-  transition: color 0.3s ease; 
+h1 {
+    margin: 0; /* Removes default margin */
 }
 
-h1:hover,h2:hover,h3:hover {
-  color: red;
+main {
+    padding: 1rem; /* Adds padding */
+    margin: 1rem auto; /* Adds margin and centers the main element */
+    background: #dadada; /* Sets the background color */
+    border-radius: 5px; /* Rounds the corners */
+    box-shadow: 0 0 10px #dadada; /* Adds a shadow effect */
+    max-width: 800px; /* Sets the maximum width */
+    padding-bottom: 1rem; /* Adds padding to the bottom */
+}
+
+section {
+    padding: 1rem; /* Adds padding */
+    margin: 1rem 0; /* Adds margin to the top and bottom */
+    background: #fff; /* Sets the background color to white */
+    border-radius: 5px; /* Rounds the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+}
+
+.link-section {
+    display: inline-block; /* Displays the element as an inline block */
+    padding: 0.5rem; /* Adds padding */
+    background: #fff; /* Sets the background color to white */
+    border-radius: 5px; /* Rounds the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+}
+
+.link-section a {
+    color: #800000; /* Sets the link color to maroon */
+    text-decoration: none; /* Removes the underline from the link */
+    font-weight: bold; /* Makes the link text bold */
+}
+
+.link-section a:hover {
+    text-decoration: underline; /* Adds an underline on hover */
+}
+
+figure {
+    text-align: center; /* Centers the text */
 }
 
 figcaption {
-  color: white;
-  text-align: center;
-}
-figcaption:hover {
-    color: blue;
-    text-decoration: none;
-  }
-  
-  figcaption:hover {
-    color: rgb(30, 0, 255);
-  }
-
-ol,ul {
-  list-style-position: inside;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    margin-top: 0.5rem; /* Adds margin to the top */
+    font-style: italic; /* Sets the font style to italic */
 }
 
-li {
-  width: 100%;
-  text-align: center;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 40px;
-  box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.5);
-  width: 35%;
-  height: auto;
-}
-img.no-shadow {
-    box-shadow: none;
-    width: 100%;
-    max-width: 1500px;
-    height: auto; 
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-iframe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50px;
-  width: 80%;
-  height: 500px;
-  box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.5);
+ul, ol {
+    display: flex; /* Displays the list as a flex container */
+    flex-direction: column; /* Sets the flex direction to column */
+    align-items: center; /* Centers the items */
+    padding-left: 0; /* Removes default padding */
+    list-style-position: inside; /* Positions the list markers inside */
 }
 
 hr {
-  border: 1px dashed white;
-  width: 100%;
-  color: white;
-}
-a {
-  color: blue;
-  text-decoration: none;
+    border: 0; /* Removes the border */
+    height: 1px; /* Sets the height */
+    background: #800000; /* Sets the background color to maroon */
 }
 
-a:hover {
-  color: red;
+footer {
+    text-align: center; /* Centers the text */
+    padding: 1rem 0; /* Adds padding to the top and bottom */
+    background: #800000; /* Sets the background color to maroon */
+    color: #ffd700; /* Sets the text color to gold */
+    position: fixed; /* Fixes the footer at the bottom */
+    width: 100%; /* Sets the width to 100% */
+    bottom: 0; /* Positions the footer at the bottom */
 }
-.short-paragraph {
-    max-width: 97%;
-    margin: 0 Auto;
-    text-align: center;
-    font-size: 1.0em;
-}
-strong{
-    color: red;
-}
-/* Responsive styles for phones */
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  img,iframe {
-    width: 80%;
-    height: auto;
-  }
-
-  h1 {
-    font-size: 1.5em;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-
-  h3 {
-    font-size: 1em;
-  }
-  p,li,figcaption
-   {
-    font-size: 0.9em;
-  }
 
   hr {
     width: 100%;
